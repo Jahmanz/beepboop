@@ -19,15 +19,14 @@ $(document).ready(function () {
   $("form#formOne").submit(function (event) {
     event.preventDefault();
 
-    var frontback = $("#frontback").val();
-    var bigsmall = $("#bigsmall").val();
-    var software = $("#software").val();
-    var newold = $("#newold").val();
-    var broad = $("#broad").val();
+    var frontback = $("#frontback").val("front-end, back-end");
+    var bigsmall = $("#bigsmall").val("big, small");
+    var software = $("#software").val("Business, End-User");
+    var newold = $("#newold").val("New, Old");
+    var broad = $("#broad").val("Yes, No");
 
-
-    if ((frontback === "front-end") && (bigsmall === "small") && software === "End-User") && (newold === "new") && (broad === "No")) {
-      $("#clickable").click();
+    if (frontback === "front-end")
+      $("#courses").submit();
       $(".answerRuby").show("#Ruby");
 
     // } else if ((frontback === "front-end") && (bigsmall === "small") && software === "ENd-User") && (newold === "new") && (broad === "No")) {

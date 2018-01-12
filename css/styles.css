@@ -2,19 +2,19 @@
   display: block;
 } */
 
-#answerCSS {
+#CSS {
   display: none;
 }
-#answerCsharp {
+#Csharp {
   display: none;
 }
-#answerJava {
-  display: none;s
-}
-#answerPHP {
+#Java {
   display: none;
 }
-#answerRuby {
+#PHP {
+  display: none;
+}
+#Ruby {
   display: none;
 }
 h1 {
