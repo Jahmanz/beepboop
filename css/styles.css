@@ -1,20 +1,20 @@
-.btn {
+/* .btn {
   display: block;
-}
+} */
 
-#CSS {
+#answerCSS {
   display: none;
 }
-#Csharp {
+#answerCsharp {
   display: none;
 }
-#Java {
+#answerJava {
   display: none;s
 }
-#PHP {
+#answerPHP {
   display: none;
 }
-#Ruby {
+#answerRuby {
   display: none;
 }
 h1 {

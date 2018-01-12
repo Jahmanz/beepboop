@@ -1,3 +1,60 @@
+
+// var add = function("option value") {
+//   return number1 + number2;
+// };
+//
+// var subtract = function(number1, number2) {
+//   return number1 - number2;
+// };
+//
+// var multiply = function(number1, number2) {
+//   return number1 * number2;
+// };
+//
+// var divide = function(number1, number2) {
+//   return number1 / number2;
+// };
+
+$(document).ready(function () {
+  $("form#formOne").submit(function (event) {
+    event.preventDefault();
+
+    var frontback = $("#frontback").val();
+    var bigsmall = $("#bigsmall").val();
+    var software = $("#software").val();
+    var newold = $("#newold").val();
+    var broad = $("#broad").val();
+
+
+    if ((frontback === "front-end") && (bigsmall === "small") && software === "End-User") && (newold === "new") && (broad === "No")) {
+      $("#clickable").click();
+      $(".answerRuby").show("#Ruby");
+
+    // } else if ((frontback === "front-end") && (bigsmall === "small") && software === "ENd-User") && (newold === "new") && (broad === "No")) {
+    //   $("#clickable").click();
+    //   $(".answerRuby").show("#Ruby");
+    //
+    //
+    // } else if ((jobs === "Server Side Development") && (companies === "Enterprise (server-side)") && (experience === "PHP") && (interests === "Work on servers used by big companies") && (mood === "The name of the company/agency you work for")) {
+    //   $("#clickable").click();
+    //   $(".answer4").show("#php");
+    //
+    // } else if ((jobs === "Web Designer") && (companies === "Design Companies or start-ups (make gorgeous and interactive webpages/apps)") && (experience === "CSS") && (interests === "Freelance making websites/app") && (mood === "Liking the language you are working with")) {
+    //   $("#clickable").click();
+    //   $(".answer3").show("#ruby");
+    //
+    // } else {
+    //   alert("You must pick all options to get your result!");
+    // }
+  });
+});
+
+
+
+
+
+
+
 // $(document).ready(function() {
 //   $("#frontback").submit(function(event) {
 //     $("#frontback").show("#CSS");
@@ -39,14 +96,14 @@
 //   });
 // });
 
-$(document).ready(function() {
-    $("form-control#frontback").submit(function() {
-      if (frontback === "frontend") {
-          $("#CSS").show();
-          $("#Csharp").hide();
-          $("#Java").hide();
-          $("#PHP").hide();
-          $("#Ruby").hide();
+// $(document).ready(function() {
+//     $("form-control#frontback").submit(function() {
+//       if (frontback === "frontend") {
+//           $("#CSS").show();
+//           $("#Csharp").hide();
+//           $("#Java").hide();
+//           $("#PHP").hide();
+//           $("#Ruby").hide();
 //
 //   // if (frontback === "CSS") {
 //   //   $('#CSS').show();
