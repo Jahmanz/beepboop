@@ -1,15 +1,18 @@
-$(document).ready(function() {
-  $("#frontback").submit(function(event) {
-    $("#frontback").show("#CSS");
-      var frontbackInput = $("input#frontback")
-      // if (frontback === "frontend") {
-        $(#CSS).show()
-      }
-  });
-});
+// $(document).ready(function() {
+//   $("#frontback").submit(function(event) {
+//     $("#frontback").show("#CSS");
+//       var frontbackInput = $("input#frontback")
+//       // if (frontback === "frontend") {
+//         $(#CSS).show()
+//       }
+//   });
+// });
 
-
-
+// $(document).ready(function() {
+//   $("button#hello").click(function() {
+//     $("ul#user").prepend("<li>Hello!</li>");
+//     $("ul#webpage").prepend("<li>Why hello there!</li>");
+//   });
 
 
 
@@ -36,14 +39,14 @@ $(document).ready(function() {
 //   });
 // });
 
-// $(document).ready(function() {
-//     $("form#frontback").submit(function() {
-//       if (frontback === "frontend") {
-//           $("#CSS").show();
-//           $("#Csharp").hide();
-//           $("#Java").hide();
-//           $("#PHP").hide();
-//           $("#Ruby").hide();
+$(document).ready(function() {
+    $("form-control#frontback").submit(function() {
+      if (frontback === "frontend") {
+          $("#CSS").show();
+          $("#Csharp").hide();
+          $("#Java").hide();
+          $("#PHP").hide();
+          $("#Ruby").hide();
 //
 //   // if (frontback === "CSS") {
 //   //   $('#CSS').show();
