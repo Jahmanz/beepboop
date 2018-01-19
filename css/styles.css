@@ -21,3 +21,7 @@ h1 {
   font-weight: bold;
   font-size: 200%
 }
+img {
+    opacity: 0.5;
+    filter: alpha
+}
