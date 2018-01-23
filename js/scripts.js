@@ -9,7 +9,7 @@ var beepBoop = function(number) {
     return false;
 
   } else {
-    return alert("I'm sorry I can't do that Dave").hide()
+    return alert("I'm sorry I can't do that puny human").hide()
   }
 };
 
