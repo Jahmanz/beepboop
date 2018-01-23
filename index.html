@@ -5,92 +5,24 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Epicodus Course Suggester</title>
+    <title>Beep-Boop</title>
   </head>
-  <body background = "img/epicodus.png">
+  <body>
     <div class="container">
-      <h1>Epicodus Course Suggester</h1>
+      <h1></h1>
 
-      <p>Now that Epicodus offers so many different courses, we often get students unsure of what to take after they finish Introduction to Programming. If you're an Epicodus student or anybody wondering which language to learn, the first thing you need to decide is if you want to focus more on front-end or back-end development. Front-end developers spend their time making things look and work well, obsessing over layouts, navigation, colors, and design. If this type of work appeals to you, your best bet is to take CSS and Design classes at Epicodus. </p>
-
-      <p>If you're more interested in back-end development, you have several choices of languages: C#, Java, PHP, and Ruby are all offered at Epicodus. My best advice about how to choose is not to worry too much. Most modern programming languages have more similarities than differences, and Epicodus graduates often find themselves working in different languages than they studied in school. Back-end programmers often switch languages as they change jobs, or even as they build different types of software at the same job. So don't stress too much about making the right choice! That said, each language has found a bit of a niche, and depending on your interests, you might be attracted to one over another.</p>
-
-
-      <p>Select the following to see what course is right for you</p>
-
-    <br>
-    <div class="container">
-      <form id="formTracker">
+      <form id="beepboopForm">
         <div class="form-group">
-          <label for="frontback">Do you prefer fron-end or back-end development?</label>
-          <select class="form-control" id="frontback">
-            <option></option>
-            <option>front-end</option>
-            <option>back-end</option>
-          </select>
+          <label for="beepboop">Enter a number up to 100 and watch for the result</label>
+          <input id="userInput" type="text">
         </div>
 
-
-        <div class="form-group">
-          <label for="bigsmall">Would you like to work for a big company, or small company?</label>
-          <select class="form-control" id="bigsmall">
-            <option></option>
-            <option>big</option>
-            <option>small</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="software">Are you interesed in business, or end user software?</label>
-          <select class="form-control" id="software">
-            <option></option>
-            <option>Business</option>
-            <option>End-User</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="newold">Interesed in learning newer language, or older, established language?</label>
-          <select class="form-control" id="newold">
-            <option></option>
-            <option>New</option>
-            <option>Old</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="broad">Interested in learning a broader, more popular language?</label>
-          <select class="form-control" id="mood">
-            <option></option>
-            <option>Yes</option>
-            <option>No</option>
-          </select>
-        </div>
-
-        <button type="submit" class="btn" id="courses">Show me the courses!</button>
+        <button type="submit" class="btn">Find out!</button>
       </form>
 
-        <div class="answerCSS" id="CSS">
-          <h1>CSS/Design</h1>
-          <p>Front-end developers spend their time making things look and work well, obsessing over layouts, navigation, colors, and design. If this type of work appeals to you, your best bet is to take CSS and Design classes at Epicodus.</p>
-        </div>
-        <div class="answerCsharp" id="Csharp">
-          <h1>C#</h1>
-          <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
-        </div>
-        <div class="answerJava" id="Java">
-          <h1>Java</h1>
-          Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
-        </div>
-        <div class="answerPHP" id="PHP">
-          <h1>PHP</h1>
-          <p>PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</p>
-        </div>
-        <div class="answerRuby" id="Ruby">
-          <h1>Ruby</h1>
-          <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
-        </div>
-
+      <div id="result">
+        <p><span class="beep"></span>
+          <span class="boop"></span></p>
       </div>
     </div>
   </body>
