@@ -1,12 +1,15 @@
 
 var beepBoop = function(number) {
-  if (number === 0){
+
+  var stringNumber = number.toString();
+
+  if (stringNumber.includes("0")) {
     return true;
-  }
-  if (number === 1){
+  } else if (stringNumber.includes("1")){
     return false;
+
   } else {
-    return alert("Im Sorry I can't do that dave")
+    return alert("I'm sorry I can't do that Dave").hide()
   }
 };
 
@@ -20,9 +23,9 @@ $(document).ready(function() {
     // $(".year").text(number);
 
     if (!result) {                 // same as writing if (result === false)
-      $(".beep").text("beep");
+      $(".beep").append(" beep");
     } if (result === true) {
-      $(".boop").text("boop");
+      $(".boop").append(" boop");
     }
 
     $("#result").show();
